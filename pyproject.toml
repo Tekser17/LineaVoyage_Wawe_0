@@ -1,0 +1,35 @@
+[tool.poetry]
+name = 'linea_voyage_0'
+version = '0.1.0'
+description = 'The bot farming Linea Voyage XP for the future drop.'
+authors = ['Alexey <abelenkov2006@gmail.com>']
+license = 'MIT'
+readme = 'README.md'
+repository = 'https://github.com/blnkoff/linea-voyage-0'
+homepage = 'https://github.com/blnkoff/linea-voyage-0'
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Customer Service',
+    'Topic :: Software Development :: Libraries :: Python Module',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3 :: Only',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS'
+]
+packages = [{ include = 'linea_voyage_0' }]
+
+[tool.poetry.dependencies]
+python = '>=3.11,<3.13'
+croco-tools = {git = "https://github.com/blnkoff/croco-tools.git"}
+loguru = "^0.7.2"
+croco-selenium-utils = {git = "https://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@github.com/blnkoff/croco-selenium-utils.git", rev = "test"}
+croco-selenium = {git = "https://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@github.com/blnkoff/croco-selenium.git", rev = "test"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pyinstaller = "^6.3.0"
+
+[build-system]
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'

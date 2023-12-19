@@ -1,0 +1,6 @@
+{
+  "logging": {
+    "enable": true,
+    "level": "info"
+  }
+}
