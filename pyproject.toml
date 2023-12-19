@@ -23,8 +23,8 @@ packages = [{ include = 'linea_voyage_0' }]
 python = '>=3.11,<3.13'
 croco-tools = {git = "https://github.com/blnkoff/croco-tools.git"}
 loguru = "^0.7.2"
-croco-selenium-utils = {git = "https://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@github.com/blnkoff/croco-selenium-utils.git", rev = "test"}
-croco-selenium = {git = "https://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@github.com/blnkoff/croco-selenium"}
+croco-selenium = "^0.1.0"
+seldegen = {git = "https://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@github.com/blnkoff/seldegen.git"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
